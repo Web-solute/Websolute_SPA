@@ -5,9 +5,9 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
-const About = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree } = about;
+const Recruit = () => {
+  const { recruit } = useContext(PortfolioContext);
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume1, resume2, resume3 } = recruit;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,9 +23,9 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
+    <section id="recruit">
       <Container>
-        <Title title="About Us" />
+        <Title title="Recruitment" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -41,20 +41,61 @@ const About = () => {
                   {paragraphOne ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
+                {resume1 && (
+                  <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={resume1}
+                    >
+                      Hustler GO !
+                    </a>
+                  </span>
+                )}
+                <hr />
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
+                {resume2 && (
+                  <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={resume2}
+                    >
+                      Hipster GO !
+                    </a>
+                  </span>
+                )}
+                <hr />
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
+                {resume3 && (
+                  <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={resume3}
+                    >
+                      Hacker GO !
+                    </a>
+                  </span>
+                )}
               </div>
             </Fade>
           </Col>
         </Row>
+        <br />
+        <br />
+        <Title title="02/21 ~ 03/18" />
       </Container>
     </section>
   );
 };
 
-export default About;
+export default Recruit;
