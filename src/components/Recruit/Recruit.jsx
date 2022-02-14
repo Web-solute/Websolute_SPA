@@ -7,7 +7,8 @@ import PortfolioContext from '../../context/context';
 
 const Recruit = () => {
   const { recruit } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume1, resume2, resume3 } = recruit;
+  const { img, imgTwo, paragraphOne, paragraphTwo, paragraphThree, resume1, resume2, resume3 } =
+    recruit;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -92,7 +93,11 @@ const Recruit = () => {
         </Row>
         <br />
         <br />
-        <Title title="02/21 ~ 03/18" />
+        <Fade bottom duration={1000} delay={600} distance="30px">
+          <div className="about-wrapper__image">
+            <AboutImg alt="profile picture" filename={imgTwo} />
+          </div>
+        </Fade>
       </Container>
     </section>
   );

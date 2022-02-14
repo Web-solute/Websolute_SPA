@@ -28,7 +28,8 @@ export const aboutData = {
 
 // ABOUT DATA
 export const recruitData = {
-  img: '',
+  img: 'recruits.png',
+  imgTwo: 'recruit.png',
   paragraphOne: '프로젝트 매니징(PM), 브랜딩&마케팅, 학회 운영에 관심있으신분!',
   paragraphTwo: '서비스 디자인 및 학회 템플릿 디자인에 관심있으신 분!',
   paragraphThree:
