@@ -94,8 +94,31 @@ const Recruit = () => {
         <br />
         <br />
         <Fade bottom duration={1000} delay={600} distance="30px">
-          <div className="about-wrapper__image">
-            <AboutImg alt="profile picture" filename={imgTwo} />
+          <div className='recruit_bound'>
+            <div className='recruit_item'>
+              <div>
+                <div className='recruit_text'>서류접수</div>
+                <div className='recruit_date'>2022.02.21 ~ 03.11</div>
+              </div>
+            </div>
+            <div className='recruit_item'>
+              <div>
+                <div className='recruit_text'>서류 합격 발표</div>
+                <div className='recruit_date'>2022.03.12</div>
+              </div>
+            </div>
+            <div className='recruit_item'>
+              <div>
+                <div className='recruit_text'>면접</div>
+                <div className='recruit_date'>2022.03.14 ~ 03.17</div>
+              </div>
+            </div>
+            <div className='recruit_item'>
+              <div>
+                <div className='recruit_text'>최종 합격 발표</div>
+                <div className='recruit_date'>2022.03.18</div>
+              </div>
+            </div>
           </div>
         </Fade>
       </Container>

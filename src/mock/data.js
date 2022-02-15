@@ -28,12 +28,12 @@ export const aboutData = {
 
 // ABOUT DATA
 export const recruitData = {
-  img: 'recruits.png',
-  imgTwo: 'recruit.png',
+  // img: 'recruits.png',
+  // imgTwo: 'recruit.png',
   paragraphOne: '프로젝트 매니징(PM), 브랜딩&마케팅, 학회 운영에 관심있으신분!',
   paragraphTwo: '서비스 디자인 및 학회 템플릿 디자인에 관심있으신 분!',
   paragraphThree:
-    '서비스 개발, 배포, 유지보수를 포함한  서비스 제작에 관심있으신 분! (분야 상관 X)',
+    '서비스 개발, 배포, 유지보수를 포함한  서비스 제작에 관심있으신 분!',
   resume1: 'https://forms.gle/kuuHovEV7tFFf7He6', // if no resume, the button will not show up
   resume2: 'https://forms.gle/hFfnQv9mLzgSd1aDA', // if no resume, the button will not show up
   resume3: 'https://forms.gle/L7dVFJ5LH7mkhqUi7', // if no resume, the button will not show up
@@ -65,8 +65,8 @@ export const projectsData = [
     title: 'Hoops',
     info: '한국외대 세미나실 예약 및 출입 관리 시스템(With QR도어락)',
     info2: '#Node_Express #React #GraphQL #Postgresql #IoT',
-    url: 'https://github.com/Web-solute/StudyRoomService',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: '',
+    repo: 'https://github.com/Web-solute/hoops-frontend', // if no repo, the button will not show up
   },
 ];
 
