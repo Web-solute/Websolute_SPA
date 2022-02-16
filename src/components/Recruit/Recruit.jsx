@@ -7,8 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const Recruit = () => {
   const { recruit } = useContext(PortfolioContext);
-  const { img, imgTwo, paragraphOne, paragraphTwo, paragraphThree, resume1, resume2, resume3 } =
-    recruit;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume1, resume2, resume3 } = recruit;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -94,33 +93,38 @@ const Recruit = () => {
         <br />
         <br />
         <Fade bottom duration={1000} delay={600} distance="30px">
-          <div className='recruit_bound'>
-            <div className='recruit_item'>
+          <div className="recruit_bound">
+            <div className="recruit_item">
               <div>
-                <div className='recruit_text'>서류접수</div>
-                <div className='recruit_date'>2022.02.21 ~ 03.11</div>
+                <div className="recruit_text">서류접수</div>
+                <div className="recruit_date">2022.02.21 ~ 03.11</div>
               </div>
             </div>
-            <div className='recruit_item'>
+            <div className="recruit_item">
               <div>
-                <div className='recruit_text'>서류 합격 발표</div>
-                <div className='recruit_date'>2022.03.12</div>
+                <div className="recruit_text">서류 합격 발표</div>
+                <div className="recruit_date">2022.03.12</div>
               </div>
             </div>
-            <div className='recruit_item'>
+            <div className="recruit_item">
               <div>
-                <div className='recruit_text'>면접</div>
-                <div className='recruit_date'>2022.03.14 ~ 03.17</div>
+                <div className="recruit_text">면접</div>
+                <div className="recruit_date">2022.03.14 ~ 03.17</div>
               </div>
             </div>
-            <div className='recruit_item'>
+            <div className="recruit_item">
               <div>
-                <div className='recruit_text'>최종 합격 발표</div>
-                <div className='recruit_date'>2022.03.18</div>
+                <div className="recruit_text">최종 합격 발표</div>
+                <div className="recruit_date">2022.03.18</div>
               </div>
             </div>
           </div>
         </Fade>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </Container>
     </section>
   );

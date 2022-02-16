@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Websloute', // e.g: 'Name | Developer'
+  title: 'Websolute', // e.g: 'Name | Developer'
   lang: 'ko', // e.g: en, es, fr, jp
   description: 'Websolute pave the way', // e.g: Welcome to my website
 };
@@ -28,12 +28,10 @@ export const aboutData = {
 
 // ABOUT DATA
 export const recruitData = {
-  // img: 'recruits.png',
-  // imgTwo: 'recruit.png',
+  img: 'recruits.png',
   paragraphOne: '프로젝트 매니징(PM), 브랜딩&마케팅, 학회 운영에 관심있으신분!',
   paragraphTwo: '서비스 디자인 및 학회 템플릿 디자인에 관심있으신 분!',
-  paragraphThree:
-    '서비스 개발, 배포, 유지보수를 포함한  서비스 제작에 관심있으신 분!',
+  paragraphThree: '서비스 개발, 배포, 유지보수를 포함한  서비스 제작에 관심있으신 분!',
   resume1: 'https://forms.gle/kuuHovEV7tFFf7He6', // if no resume, the button will not show up
   resume2: 'https://forms.gle/hFfnQv9mLzgSd1aDA', // if no resume, the button will not show up
   resume3: 'https://forms.gle/L7dVFJ5LH7mkhqUi7', // if no resume, the button will not show up
